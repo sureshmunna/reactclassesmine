@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import UncontrolledForm from './Components/UncontrolledForm'
 import ControlledForm from './Components/ControlledForm'
+import SingleControlledForm from './Components/SingleControlledForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,8 @@ function App() {
     <>
       
         {/* {<UncontrolledForm/>} */}
-        {<ControlledForm/>}
+        {/* {<ControlledForm/>} */}
+        {<SingleControlledForm/>}
 
     </>
   )
