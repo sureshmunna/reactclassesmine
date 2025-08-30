@@ -3,7 +3,7 @@ let ComponentB =()=>{
 
     return(
         <>
-        <h1 className={style.module.heading}>ComponentB</h1>
+        <h1 className={style.heading}>ComponentB</h1>
         </>
     )
 }
