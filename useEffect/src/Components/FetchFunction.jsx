@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 let FetchFunction = () => {
   let [allUsers, setAllUsers] = useState([]);
@@ -36,6 +36,19 @@ let FetchFunction = () => {
               {user.email}<br></br>{user.username}
             </li>
           ))
+        }
+      </ul>
+      <ul>
+        {
+          allUsers?.length > 0 ? allUsers?.map((user) => {
+            let { email, username,id } = user;
+            return (
+              <Fragment key={id} >
+                <li style={{color:"blue", backgroundColor:"GrayText",width:"25%"}}>{email} </li>
+                <li style={{color:"red",background:"cyan",width:"25%"}}>{username}</li>
+              </Fragment>
+            )
+          }) : []
         }
       </ul>
     </>
