@@ -52,8 +52,6 @@ createRoot(document.getElementById('root')).render(
             <td>data</td>
             <td>d3</td>
           </tr>
-          <tr></tr>
-          <tr></tr>
         </tbody>
       </table>
     </div>
