@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  /* background-color: hotpink; */
+}
+.sideContainer{
+  height: calc(100vh - 110px);
+  color: aqua;
+  min-width: 200px;
+  background-color: hotpink;
+}
+.navContainer{
+  height: 100px;
+  background-color: aqua;
+}
