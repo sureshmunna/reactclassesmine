@@ -13,6 +13,10 @@ let routes = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Register />,
+      },
+      {
+        path: "/home",
         element: <Home />,
       },
       {
@@ -23,10 +27,7 @@ let routes = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      {
-        path: "/register",
-        element: <Register />,
-      },
+      
     ],
   },
 ]);

@@ -14,7 +14,7 @@ const Register = () => {
   }
   let handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/")
+    navigate("/home")
     setFormData({
       userName: "",
       passWord: ""
@@ -26,8 +26,8 @@ const Register = () => {
         <form onSubmit={handleSubmit} className='bg-white shadow-lg rounded-2xl p-8 w-full max-w-md'>
           <h2 className='text-2xl font-bold text-center mb-6 text-grey-700'>Register</h2>
           <div className="mb-4">
-            <label className='block text-grey-600 font-medium mb-2' htmlFor="">User Name</label>
-            <input className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none' type="text" name="userName" value={userName} onChange={handleChange} />
+            <label className='block text-grey-600 font-medium mb-2' htmlFor="userName">User Name</label>
+            <input id='userName' className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none' type="text" name="userName" value={userName} onChange={handleChange} />
           </div>
           <div className="mb-6">
             <label className='block text-grey-600 font-medium mb-2' htmlFor="">Password</label>
