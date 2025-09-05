@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Products = () => {
-  return (
-    <div>Products</div>
-  )
-}
+  let [products, setProducts] = useState([]);
 
-export default Products
+  let getProducts = async () => {
+    let data = await fetch("https://api.escuelajs.co/api/v1/products");
+    let result = await data.json();
+    setProducts(result);
+    console.log(result);
+  }
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  return (
+    <>
+      <div className='user-div'>
+        {products?.map((product) => {
+          let { id, title, images } = product;
+          return (
+            <div key={id} className='image-div'>
+              <img
+                src={images[0]}   
+                alt={title}
+                className='image-box'
+              />
+              <h3>{title}</h3>
+              <Link to={`/productDetails/${id}`} >View Details</Link> 
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Products;

@@ -22,7 +22,7 @@ const Users = () => {
                     return (
                         <div key={id} className='image-div' >
                             <img src={avatar} alt={name} className='image-box'></img>
-                            <Link >User Details</Link>
+                            <Link to={`/userDetails/${id}`} >User Details</Link>
                         </div>
                     )
                 })
