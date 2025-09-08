@@ -28,7 +28,8 @@ const Products = () => {
                 className='image-box'
               />
               <h3>{title}</h3>
-              <Link to={`/productDetails/${id}`} >View Details</Link> 
+              <Link to={`/productDetails/${id}`} state={{ product }}>View Details</Link> 
+              {/* <Link to={`/productDetails/${id}`} state={ product }>View Details</Link> //we can pass like this also */} 
             </div>
           );
         })}

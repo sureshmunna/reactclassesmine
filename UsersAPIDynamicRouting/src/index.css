@@ -25,8 +25,10 @@ a{
   height: 40px;
   text-decoration: none;
   line-height: 40px;
-  background-color: #efefef;
+  background-color: orange;
   margin-bottom: 2px ;
+  justify-content: center;
+  color: #efefef;
 }
 .user-div{
   display: flex;

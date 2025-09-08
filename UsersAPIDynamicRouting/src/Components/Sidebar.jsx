@@ -8,8 +8,8 @@ const Sidebar = () => {
                 {/* <Link to='/' >Users</Link>
                 <Link to='/Products'>Products</Link> */}
                 <NavLink to='/' className={({isActive})=>{return isActive == true ?"active":"inactive"}}>Users</NavLink>
-                <NavLink to='/Products' className={({isActive})=>{return isActive == true ?"active":"inactive"}}>Products</NavLink>
-                {/* <div className='demo'><h1>details</h1></div> */}
+                <NavLink to='/products' className={({isActive})=>{return isActive == true ?"active":"inactive"}}>Products</NavLink>
+                
             </nav>
         </>
     )

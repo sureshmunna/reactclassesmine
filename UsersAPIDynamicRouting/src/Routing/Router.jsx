@@ -8,7 +8,7 @@ let routes = createBrowserRouter([{
     path:'/',
     element:<App/>,
     children:[{
-        index:true,
+        path:"/",
         element:<Users/>
     },
     {
